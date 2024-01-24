@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  transition: 1s;
+}
+
+.sidebar {
+  width: 40vw;
+  height: 100vh;
+  background-image: url("yoanna-yordanova-dsp004sLN7g-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.main-content {
+  width: 60vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  transition: 1s;
+}
+
+.form-body {
+  padding: 2rem;
+  height: 50%;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.form-body h1 {
+  font-size: 3em;
+  margin-left: 2.5rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.form-body input {
+  width: 40%;
+  height: 50px;
+  margin: 20px;
+  border: 0.1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 1.5em;
+  transition: 0.6s;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.submit {
+  margin-left: 2.5em;
+}
+
+button {
+  width: 11em;
+  height: 50px;
+  font-size: 1.5em;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  border: 0;
+  background-color: rgb(54, 157, 198);
+  color: white;
+}
+
+p {
+  width: 100%;
+  margin: 0;
+  font-size: 1em;
+}
+
+input:focus {
+  background-color: rgb(54, 157, 198);
+  border: 1px solid blue;
+  color: white;
+}
+
+input:focus::placeholder {
+  color: white;
+}
+
+input::placeholder {
+  font-size: 0.75em;
+}
+
+@media screen and (max-width: 700px) and (min-width: 500px) {
+  .container {
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: 200px;
+    background-image: url("yoanna-yordanova-dsp004sLN7g-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+
+  .main-content {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+  }
+
+  .form-body {
+    padding: 2rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .form-body input {
+    width: 70%;
+    height: 50px;
+    border: 0.1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 1.5em;
+    transition: 0.6s;
+  }
+
+  .submit {
+    margin-top: 2em;
+    margin-left: 0;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1100px) {
+  .sidebar {
+    width: 40%;
+  }
+  .main-content {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+  }
+
+  .form-body input {
+    margin-left: -1em;
+  }
+
+  .form-body input {
+    width: 60%;
+    height: 50px;
+    border: 0.1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 1.5em;
+    transition: 0.6s;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: 200px;
+    background-image: url("yoanna-yordanova-dsp004sLN7g-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+
+  .main-content {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+  }
+
+  .form-body {
+    padding: 2rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .form-body input {
+    width: 100%;
+    height: 50px;
+    border: 0.1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 1.5em;
+    transition: 0.6s;
+  }
+
+  .submit {
+    margin-top: 2em;
+    margin-left: 0;
+    justify-content: center;
+  }
+}
