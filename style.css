@@ -17,6 +17,22 @@
   background-image: url("yoanna-yordanova-dsp004sLN7g-unsplash.jpg");
   background-position: center;
   background-size: cover;
+  display: flex;
+}
+
+.sidebar h1 {
+  width: 100%;
+  text-align: center;
+  height: 10vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin-top: 30vh;
+  font-size: 2.3em;
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 5px;
 }
 
 .main-content {
@@ -81,13 +97,6 @@ p {
 }
 
 input:focus {
-  background-color: rgb(54, 157, 198);
-  border: 1px solid blue;
-  color: white;
-}
-
-input:focus::placeholder {
-  color: white;
 }
 
 input::placeholder {
@@ -103,7 +112,7 @@ input::placeholder {
 
   .sidebar {
     width: 100%;
-    height: 200px;
+    height: 40vh;
     background-image: url("yoanna-yordanova-dsp004sLN7g-unsplash.jpg");
     background-position: center;
     background-size: cover;
@@ -139,6 +148,10 @@ input::placeholder {
     margin-left: 0;
     justify-content: center;
   }
+
+  .form-body h1 {
+    margin-left: 2em;
+  }
 }
 
 @media screen and (min-width: 700px) and (max-width: 1100px) {
@@ -156,7 +169,7 @@ input::placeholder {
   }
 
   .form-body input {
-    width: 60%;
+    width: 75%;
     height: 50px;
     border: 0.1px solid black;
     border-radius: 10px;
@@ -175,7 +188,7 @@ input::placeholder {
 
   .sidebar {
     width: 100%;
-    height: 200px;
+    height: 40vh;
     background-image: url("yoanna-yordanova-dsp004sLN7g-unsplash.jpg");
     background-position: center;
     background-size: cover;
@@ -185,6 +198,7 @@ input::placeholder {
     width: 100%;
     height: 60vh;
     display: flex;
+    padding-bottom: 2em;
   }
 
   .form-body {
@@ -210,5 +224,10 @@ input::placeholder {
     margin-top: 2em;
     margin-left: 0;
     justify-content: center;
+  }
+
+  .form-body h1 {
+    font-size: 2em;
+    margin-left: 0.5em;
   }
 }
